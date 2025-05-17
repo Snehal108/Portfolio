@@ -1,0 +1,135 @@
+General Reset & Fonts
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  nav .logo {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .hero {
+    text-align: center;
+    margin: 100px 0;
+  }
+  .hero h2 {
+    font-size: 48px;
+    font-weight: 600;
+  }
+  .hero h2 span {
+    color: #f093fb;
+  }
+  .hero p {
+    margin: 10px 0 20px;
+    font-weight: 300;
+  }
+  .cta-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #f093fb;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .cta-btn:hover {
+    background: #e667af;
+  }
+  
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  }
+  
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+  .project-card {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  form input, form textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+  }
+  form button {
+    padding: 12px;
+    background: #4facfe;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  form button:hover {
+    background: #00f2fe;
+  }
+  
+ 
+  footer {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .hero h2 {
+      font-size: 32px;
+    }
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
